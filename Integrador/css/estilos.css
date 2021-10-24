@@ -1,0 +1,69 @@
+.cuerpo{
+	
+    background-image: url(../img/ba1.jpg);
+    height: 85vh;
+    background-size: cover !important;
+    padding: 20% 5% 3% 35% !important;
+   
+}
+
+.izq{
+
+	  width: 50% !important;
+     margin-top: 1% !important;
+    background-image: url(../img/honolulu.jpg) !important;
+    background-size: cover !important;
+    background-repeat: no-repeat;
+   
+}
+
+.drch{
+    margin-top: 1% !important;
+    width: 50% !important;
+    float: right !important;   
+    padding: 1%;
+}
+.intdrch{
+	padding: 1% 1% 70% 1% !important;
+
+}
+
+.cardCustom{
+
+	height: 10% !important;
+}
+
+
+
+.cardTicket{
+  margin: 5% !important;
+  border-radius: 0 !important;
+  text-align: center !important;
+  
+}
+
+.customWidth{
+ /* max-width: 768px;*/
+}
+
+.pagarbg{
+  background-color:#CCE5FF !important ;
+  height: 6vh !important;
+  width: 98% !important;
+
+  margin: .5% .5% 6% .5% !important;
+  padding: 1% !important;
+}
+.btnbg{
+  background-color: #97C93E !important;
+}
+
+.ftbg{
+background-color: #1C3846 !important;
+align-items: center;
+}
+
+
+footer{
+	margin-top: 1% !important;
+}
