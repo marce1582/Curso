@@ -23,7 +23,7 @@ function descuento(){
 }
 
 function borrar(){
-document.getElementById("test").reset();
+document.getElementById("compraTicket").reset();
 document.getElementById("total").innerHTML ="Total a Pagar: $";
 
 }

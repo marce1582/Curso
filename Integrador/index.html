@@ -162,18 +162,18 @@
 <div  class="container">
     <div class="row">
         <div class="col">
-     <form id="test">
-          <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+     <form id="formTicket"name="compraTicket">
+          <input type="text" class="form-control" name="nombre" placeholder="Nombre" maxlength="40" aria-label="First name">
         </div>
         <div class="col mb-3">
-          <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+          <input type="text" class="form-control" name="apellido"placeholder="Apellido" maxlength="40" aria-label="Last name">
         </div>
         <div class="col-md-12 mb-3">
-            <input type="email" class="form-control" placeholder="correo">
+            <input type="email" class="form-control" id="correo2" name="correo" placeholder="correo" maxlength="100">
         </div>
         <div class="col-6 mb-5">
-            <label for="cantidad" class="form-label">Cantidad</label>
-            <input type="number" id="cantidad" class="form-control">
+            <label for="cantidad"  class="form-label">Cantidad</label>
+            <input type="number" name="cantidad" id="cantidad" class="form-control">
         </div>
         <div class="col-6 mb-5">
             <label for="categoria" class="form-label">Categoria</label>
@@ -190,10 +190,10 @@
          </div>
 </form>
     <div class="d-grid col-6 mb-5">
-    <button type="submit" id="borrar" class="btn me-2 btnbg" onclick='borrar();'>Borrar</button>
+    <button id="borrar" class="btn me-2 btnbg">Borrar</button>
     </div>
     <div class="d-grid col-6 mb-5">
-    <button type="submit" id="resumen" class="btn btnbg" onclick='descuento();'>Resumen</button>
+    <button type="submit" id="resumen" class="btn btnbg">Resumen</button>
     </div>
 
        
@@ -231,8 +231,7 @@
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 
-    <script src="js/dom.js">
-        
-    </script>
+    <!--script src="js/dom.js"></script-->
+    <script src="js/test.js"></script>
 </body>
 </html>
