@@ -1,15 +1,13 @@
-<?php  include ("php/config.php");
-        
+<?php   session_start();
+include ("php/config.php");
+       
 ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script type="text/javascript" src="js/bootstrap.min.js" crossorigin="anonymous"></script>
   
-  <script type="text/javascript" src="js/dataTables.bootstrap5.min.js"></script>
 	<link rel="stylesheet" href="bootstrap/bootstrap.min.css">
   <link rel="stylesheet" href="css/sweetalert2.min.css">
   <link rel="stylesheet" href="css/estilos.css">
@@ -32,7 +30,7 @@
          echo '<div id="error"><h3 style="color:red";>"Es necesario completar el formulario"</h3></div>';
          }else if(isset($_GET['okadd'])){
 
-            echo '<div id="okadd"><h3 style="color:green";>"Nuevo Usuario ingresado"</h3></div>';
+            echo '<div id="okadd"><h3 style="color:green";>"Nuevo departamento ingresado"</h3></div>';
             
          }else if(isset($_GET['existe'])){
 
@@ -94,7 +92,7 @@ $result = mysqli_query($conn ,$sql);
          }
 
       echo $activodto;?>
-    <a href="php/deldto.php?id_dto=<?php echo $fila['id_dto']; ?>" ><img src="img/trash.png" alt="Eliminar"></a></p>
+    <a id="trash" href="php/deldto.php?id_dto=<?php echo $fila['id_dto']; ?>" ><img src="img/trash.png" alt="Eliminar"></a></p>
 <?php } ?>
 
 
@@ -194,10 +192,30 @@ echo '<td><button id="eliminar"  class="btn btn-warning"><a href="php/deluser.ph
 </div>
 </section>
 
-  <script src="js/sweetalert2.all.min.js"></script>
+
+
+
+
+
+
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  
+    <script type="text/javascript" src="js/dataTables.bootstrap5.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js" crossorigin="anonymous"></script>
+   <script src="js/sweetalert2.all.min.js"></script>
+   <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+ 
 	<script type="text/javascript" src="js/custom.js"></script>
 
+ <script type="text/javascript">
+   
+   
+   
 
+   
+
+
+ </script>
 
 </body>
 </html>

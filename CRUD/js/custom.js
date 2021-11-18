@@ -53,6 +53,10 @@ let frm=document.getElementById("form");
 frm.action = "php/query.php";
 }
 
+function borrar(){
+  swal("Estas eliminando");
+   }
+
 /*function validar(){
 	var nombre = document.usuarioNuevo.nombre.value;
 	var apellido = document.usuarioNuevo.apellido.value;
@@ -84,13 +88,15 @@ let btnListaApellido = document.getElementById("listarapellido");
 let btnListDto = document.getElementById("listardto");
 let btnEliminar = document.getElementById("eliminar");
 let bntQuery = document.getElementById("query");
+let btnTrash = document.getElementById("trash");
 
-btnAdd.addEventListener('click', addAction);
+btnAdd.addEventListener('click',addAction);
 btnListaApellido.addEventListener('click',listarApellido);
 btnNuevoDto.addEventListener('click',nuevoDto);
 btnListDto.addEventListener('click',listDto);
 btnUpdate.addEventListener('click',updateAction);
 bntUpdateDto.addEventListener('click',updateDto);
 bntQuery.addEventListener('click',Query);
+btnTrash.addEventListener('click',borrar);
 
 //btnUpdate.addEventListener('click',validar);
