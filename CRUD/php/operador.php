@@ -201,7 +201,7 @@ if(isset($_GET['okdto'])){
 
         echo '<td>'.$activo.'</td>';
 
-        echo '<td><button id="eliminar"  class="btn btn-outline-danger"><a href="php/deluser.php?dni='.$file['dni'].'">Eliminar</a></button>
+        echo '<td><button id="eliminar"  class="btn btn-outline-danger"><a href="deluser.php?dni='.$file['dni'].'">Eliminar</a></button>
         </td>';        
          echo'</tr>';
          
